@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonMon.UI", "MonMon.UI\MonMon.UI.csproj", "{81A70635-AEBE-4AD0-A463-FDA6F800E339}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonMon.UI", "MonMon.UI\MonMon.UI.csproj", "{81A70635-AEBE-4AD0-A463-FDA6F800E339}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonMod.LoggingServices", "MonMod.LoggingServices\MonMod.LoggingServices.csproj", "{5050D328-C25A-445E-8904-0C110CE6E817}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{81A70635-AEBE-4AD0-A463-FDA6F800E339}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81A70635-AEBE-4AD0-A463-FDA6F800E339}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81A70635-AEBE-4AD0-A463-FDA6F800E339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5050D328-C25A-445E-8904-0C110CE6E817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5050D328-C25A-445E-8904-0C110CE6E817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5050D328-C25A-445E-8904-0C110CE6E817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5050D328-C25A-445E-8904-0C110CE6E817}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

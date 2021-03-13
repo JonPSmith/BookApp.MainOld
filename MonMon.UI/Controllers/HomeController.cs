@@ -1,26 +1,25 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using MonMon.UI.Models;
-using System;
-using System.Collections.Generic;
+﻿// Copyright (c) 2020 Jon P Smith, GitHub: JonPSmith, web: http://www.thereformedprogrammer.net/
+// Licensed under MIT license. See License.txt in the project root for license information.
+
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using ModMon.Books.Persistence;
+using MonMon.UI.HelperExtensions;
+using MonMon.UI.Models;
 
 namespace MonMon.UI.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseTraceController
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
 
         public IActionResult Index()
         {
             return View();
+        }
+
+        public IActionResult DatabaseCounts([FromServices] BookDbContext context)
+        {
+            return View(new DatabaseStatsDto(context));
         }
 
         public IActionResult Privacy()
@@ -28,10 +27,33 @@ namespace MonMon.UI.Controllers
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Chapter15Setup()
+        {
+            return View();
+        }
+
+        public IActionResult Chapter16Setup()
+        {
+            return View();
+        }
+
+        public IActionResult About()
+        {
+            var isLocal = Request.IsLocal();
+            return View(isLocal);
+        }
+
+        //public IActionResult Contact()
+        //{
+        //    ViewData["Message"] = "Your contact page.";
+
+        //    return View();
+        //}
+
         public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(new ErrorViewModel
+                { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
