@@ -23,11 +23,11 @@ using ModMon.Books.ServiceLayer.Common.Dtos;
 using ModMon.Books.ServiceLayer.GoodLinq;
 using ModMon.Books.ServiceLayer.GoodLinq.Dtos;
 using ModMon.Books.ServiceLayer.Udfs;
-using MonMon.UI.Logger;
+using ModMon.UI.Logger;
 using NetCore.AutoRegisterDi;
 using SoftDeleteServices.Configuration;
 
-namespace MonMon.UI
+namespace ModMon.UI
 {
     public class Startup
     {

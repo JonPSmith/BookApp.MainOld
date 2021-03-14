@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace BookApp.Infrastructure.LoggingServices
+namespace ModMon.LoggingServices
 {
     public class HttpTimingLog
     {

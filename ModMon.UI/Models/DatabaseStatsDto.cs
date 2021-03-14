@@ -5,7 +5,7 @@ using System.Linq;
 using ModMon.Books.Domain;
 using ModMon.Books.Persistence;
 
-namespace MonMon.UI.Models
+namespace ModMon.UI.Models
 {
     public class DatabaseStatsDto
     {

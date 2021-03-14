@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace BookApp.Infrastructure.LoggingServices
+namespace ModMon.LoggingServices
 {
     public class LogParts
     {

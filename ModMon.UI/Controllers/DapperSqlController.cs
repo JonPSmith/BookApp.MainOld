@@ -4,15 +4,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using BookApp.Infrastructure.LoggingServices;
 using Microsoft.AspNetCore.Mvc;
 using ModMon.Books.Persistence;
 using ModMon.Books.ServiceLayer.Common;
 using ModMon.Books.ServiceLayer.Common.Dtos;
 using ModMon.Books.ServiceLayer.Dapper.DapperCode;
 using ModMon.Books.ServiceLayer.GoodLinq;
+using ModMon.LoggingServices;
 
-namespace MonMon.UI.Controllers
+namespace ModMon.UI.Controllers
 {
     public class DapperSqlController : BaseTraceController
     {

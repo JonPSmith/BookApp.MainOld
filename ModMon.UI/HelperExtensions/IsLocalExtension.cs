@@ -5,7 +5,7 @@ using System;
 using System.Net;
 using Microsoft.AspNetCore.Http;
 
-namespace MonMon.UI.HelperExtensions
+namespace ModMon.UI.HelperExtensions
 {
     public static class IsLocalExtension
     {

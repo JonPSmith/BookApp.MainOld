@@ -5,7 +5,7 @@ using ModMon.Books.Domain.SupportTypes;
 using ModMon.Books.Persistence;
 using SoftDeleteServices.Configuration;
 
-namespace MonMon.UI.SoftDeleteConfig
+namespace ModMon.UI.SoftDeleteConfig
 {
     public class ConfigSoftDelete : SingleSoftDeleteConfiguration<ISoftDelete>
     {

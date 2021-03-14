@@ -5,7 +5,6 @@ using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using BookApp.Infrastructure.LoggingServices;
 using GenericServices;
 using GenericServices.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
@@ -16,10 +15,11 @@ using ModMon.Books.Infrastructure.CachedValues;
 using ModMon.Books.Infrastructure.CachedValues.CheckFixCode;
 using ModMon.Books.Persistence;
 using ModMon.Books.ServiceLayer.GoodLinq.Dtos;
-using MonMon.UI.HelperExtensions;
+using ModMon.LoggingServices;
+using ModMon.UI.HelperExtensions;
 using SoftDeleteServices.Concrete;
 
-namespace MonMon.UI.Controllers
+namespace ModMon.UI.Controllers
 {
     public class AdminController : BaseTraceController
     {

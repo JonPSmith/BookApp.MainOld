@@ -3,7 +3,7 @@
 
 using System;
 
-namespace MonMon.UI.Models
+namespace ModMon.UI.Models
 {
     /// <summary>
     /// Cosmos DB settings

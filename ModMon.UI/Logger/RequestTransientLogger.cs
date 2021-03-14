@@ -2,12 +2,12 @@
 // Licensed under MIT license. See License.txt in the project root for license information.
 
 using System;
-using BookApp.Infrastructure.LoggingServices;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.Extensions.Logging;
+using ModMon.LoggingServices;
 
-namespace MonMon.UI.Logger
+namespace ModMon.UI.Logger
 {
     /// <summary>
     /// This logger only logs for the current request, i.e. it overwrites the log when a new request starts

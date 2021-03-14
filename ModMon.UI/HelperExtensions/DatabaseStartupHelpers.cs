@@ -6,15 +6,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using ModMon.Books.Infrastructure.Seeding;
 using ModMon.Books.Persistence;
-using MonMon.UI.Models;
 
-namespace MonMon.UI.HelperExtensions
+namespace ModMon.UI.HelperExtensions
 {
     public static class DatabaseStartupHelpers
     {

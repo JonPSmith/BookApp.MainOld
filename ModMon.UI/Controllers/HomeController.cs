@@ -4,10 +4,10 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using ModMon.Books.Persistence;
-using MonMon.UI.HelperExtensions;
-using MonMon.UI.Models;
+using ModMon.UI.HelperExtensions;
+using ModMon.UI.Models;
 
-namespace MonMon.UI.Controllers
+namespace ModMon.UI.Controllers
 {
     public class HomeController : BaseTraceController
     {

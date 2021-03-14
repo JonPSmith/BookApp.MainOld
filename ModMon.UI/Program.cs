@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using MonMon.UI.HelperExtensions;
+using ModMon.UI.HelperExtensions;
 
-namespace MonMon.UI
+namespace ModMon.UI
 {
     public class Program
     {

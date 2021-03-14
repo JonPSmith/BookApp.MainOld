@@ -3,7 +3,6 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using BookApp.Infrastructure.LoggingServices;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ModMon.Books.ServiceLayer.Common;
@@ -11,8 +10,9 @@ using ModMon.Books.ServiceLayer.Common.Dtos;
 using ModMon.Books.ServiceLayer.GoodLinq;
 using ModMon.Books.ServiceLayer.Udfs;
 using ModMon.Books.ServiceLayer.Udfs.Dtos;
+using ModMon.LoggingServices;
 
-namespace MonMon.UI.Controllers
+namespace ModMon.UI.Controllers
 {
     public class UdfsSqlController : BaseTraceController
     {
