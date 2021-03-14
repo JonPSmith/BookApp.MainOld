@@ -22,11 +22,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MonMod.LoggingServices\MonMod.LoggingServices.csproj" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
+    <ProjectReference Include="..\MonMod.LoggingServices\MonMod.LoggingServices.csproj" />
   </ItemGroup>
 
 </Project>
