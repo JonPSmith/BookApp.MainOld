@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,7 +17,7 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.1" />
     <PackageReference Include="NetCore.AutoRegisterDi" Version="2.1.0" />
-    <PackageReference Include="ModMon.Books" Version="1.0.0-preview008" />
+    <PackageReference Include="ModMon.Books" Version="1.0.0-preview012" />
   </ItemGroup>
 
   <ItemGroup>

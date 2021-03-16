@@ -1,6 +1,7 @@
 // Copyright (c) 2020 Jon P Smith, GitHub: JonPSmith, web: http://www.thereformedprogrammer.net/
 // Licensed under MIT license. See License.txt in the project root for license information.
 
+using System.Linq;
 using System.Reflection;
 using System.Text.Json.Serialization;
 using GenericEventRunner.ForSetup;
@@ -13,18 +14,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using ModMon.Books.Infrastructure.CachedValues;
+using ModMon.Books.AppSetup;
 using ModMon.Books.Infrastructure.CachedValues.ConcurrencyHandlers;
 using ModMon.Books.Infrastructure.CachedValues.EventHandlers;
-using ModMon.Books.Infrastructure.Seeding;
 using ModMon.Books.Persistence;
-using ModMon.Books.ServiceLayer.Cached;
-using ModMon.Books.ServiceLayer.Common.Dtos;
-using ModMon.Books.ServiceLayer.GoodLinq;
-using ModMon.Books.ServiceLayer.GoodLinq.Dtos;
-using ModMon.Books.ServiceLayer.Udfs;
 using ModMon.UI.Logger;
-using NetCore.AutoRegisterDi;
 using SoftDeleteServices.Configuration;
 
 namespace ModMon.UI
@@ -60,16 +54,8 @@ namespace ModMon.UI
             services.AddHttpContextAccessor();
 
 
-            //This registers all the services across all the projects in this application
-            var diLogs = services.RegisterAssemblyPublicNonGenericClasses(
-                    Assembly.GetAssembly(typeof(ICheckFixCacheValuesService)),
-                    Assembly.GetAssembly(typeof(BookListDto)),
-                    Assembly.GetAssembly(typeof(IBookGenerator)),
-                    Assembly.GetAssembly(typeof(IListBooksCachedService)),
-                    Assembly.GetAssembly(typeof(IListBooksService)),
-                    Assembly.GetAssembly(typeof(IListUdfsBooksService))
-                )
-                .AsPublicImplementedInterfaces();
+            //ModMod.Books startup
+            services.RegisterBooksServices(Configuration);
 
             //Register EfCore.GenericEventRunner
             var eventConfig = new GenericEventRunnerConfig
@@ -83,8 +69,7 @@ namespace ModMon.UI
             //Register EfCoreGenericServices
             services.ConfigureGenericServicesEntities(typeof(BookDbContext))
                 .ScanAssemblesForDtos(
-                    Assembly.GetAssembly(typeof(BookListDto)),
-                    Assembly.GetAssembly(typeof(AddReviewDto))
+                    BooksStartupInfo.GenericServiceAssemblies.ToArray()
                 ).RegisterGenericServices();
 
             var softLogs = services.RegisterSoftDelServicesAndYourConfigurations();
