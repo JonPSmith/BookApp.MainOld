@@ -16,8 +16,8 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.1" />
+    <PackageReference Include="ModMon.Books" Version="1.0.0-preview026" />
     <PackageReference Include="NetCore.AutoRegisterDi" Version="2.1.0" />
-    <PackageReference Include="ModMon.Books" Version="1.0.0-preview012" />
   </ItemGroup>
 
   <ItemGroup>

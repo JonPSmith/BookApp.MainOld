@@ -53,13 +53,11 @@ namespace ModMon.UI
 
             services.AddHttpContextAccessor();
 
-
             //ModMod.Books startup
-            services.RegisterBooksServices(Configuration);
+            var test = services.RegisterBooksServices(Configuration);
 
             //Register EfCore.GenericEventRunner
-            var eventConfig = new GenericEventRunnerConfig
-            {};
+            var eventConfig = new GenericEventRunnerConfig();
             eventConfig.RegisterSaveChangesExceptionHandler<BookDbContext>(BookWithEventsConcurrencyHandler.HandleCacheValuesConcurrency);
             eventConfig.AddActionToRunAfterDetectChanges<BookDbContext>(BookDetectChangesExtensions.ChangeChecker);
             var logs = services.RegisterGenericEventRunner(eventConfig,
