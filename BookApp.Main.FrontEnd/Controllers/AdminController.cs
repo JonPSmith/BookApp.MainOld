@@ -5,21 +5,21 @@ using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using BookApp.Books.Domain;
+using BookApp.Books.Domain.SupportTypes;
+using BookApp.Books.Infrastructure.CachedValues;
+using BookApp.Books.Infrastructure.CachedValues.CheckFixCode;
+using BookApp.Books.Persistence;
+using BookApp.Books.ServiceLayer.GoodLinq.Dtos;
+using BookApp.Main.FrontEnd.HelperExtensions;
+using BookApp.Main.LoggingServices;
 using GenericServices;
 using GenericServices.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ModMon.Books.Domain;
-using ModMon.Books.Domain.SupportTypes;
-using ModMon.Books.Infrastructure.CachedValues;
-using ModMon.Books.Infrastructure.CachedValues.CheckFixCode;
-using ModMon.Books.Persistence;
-using ModMon.Books.ServiceLayer.GoodLinq.Dtos;
-using ModMon.LoggingServices;
-using ModMon.UI.HelperExtensions;
 using SoftDeleteServices.Concrete;
 
-namespace ModMon.UI.Controllers
+namespace BookApp.Main.FrontEnd.Controllers
 {
     public class AdminController : BaseTraceController
     {

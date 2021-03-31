@@ -4,15 +4,15 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using BookApp.Books.Infrastructure.Seeding;
+using BookApp.Books.Persistence;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using ModMon.Books.Infrastructure.Seeding;
-using ModMon.Books.Persistence;
 
-namespace ModMon.UI.HelperExtensions
+namespace BookApp.Main.FrontEnd.HelperExtensions
 {
     public static class DatabaseStartupHelpers
     {

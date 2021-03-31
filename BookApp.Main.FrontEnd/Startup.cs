@@ -4,6 +4,11 @@
 using System.Linq;
 using System.Reflection;
 using System.Text.Json.Serialization;
+using BookApp.Books.AppSetup;
+using BookApp.Books.Infrastructure.CachedValues.ConcurrencyHandlers;
+using BookApp.Books.Infrastructure.CachedValues.EventHandlers;
+using BookApp.Books.Persistence;
+using BookApp.Main.FrontEnd.Logger;
 using GenericEventRunner.ForSetup;
 using GenericServices.Setup;
 using Microsoft.AspNetCore.Builder;
@@ -14,14 +19,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using ModMon.Books.AppSetup;
-using ModMon.Books.Infrastructure.CachedValues.ConcurrencyHandlers;
-using ModMon.Books.Infrastructure.CachedValues.EventHandlers;
-using ModMon.Books.Persistence;
-using ModMon.UI.Logger;
 using SoftDeleteServices.Configuration;
 
-namespace ModMon.UI
+namespace BookApp.Main.FrontEnd
 {
     public class Startup
     {

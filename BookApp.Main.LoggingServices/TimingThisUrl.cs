@@ -4,7 +4,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ModMon.LoggingServices
+namespace BookApp.Main.LoggingServices
 {
     public class TimingThisUrl
     {

@@ -2,12 +2,12 @@
 // Licensed under MIT license. See License.txt in the project root for license information.
 
 using System.Threading.Tasks;
+using BookApp.Main.FrontEnd.HelperExtensions;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using ModMon.UI.HelperExtensions;
 
-namespace ModMon.UI
+namespace BookApp.Main.FrontEnd
 {
     public class Program
     {

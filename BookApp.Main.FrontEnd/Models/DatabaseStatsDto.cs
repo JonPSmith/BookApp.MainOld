@@ -2,10 +2,10 @@
 // Licensed under MIT license. See License.txt in the project root for license information.
 
 using System.Linq;
-using ModMon.Books.Domain;
-using ModMon.Books.Persistence;
+using BookApp.Books.Domain;
+using BookApp.Books.Persistence;
 
-namespace ModMon.UI.Models
+namespace BookApp.Main.FrontEnd.Models
 {
     public class DatabaseStatsDto
     {

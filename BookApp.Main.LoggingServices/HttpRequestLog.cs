@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging;
 
 [assembly: InternalsVisibleTo("test")]
 
-namespace ModMon.LoggingServices
+namespace BookApp.Main.LoggingServices
 {
     /// <summary>
     ///     This class handles the storing/retrieval of logs for each Http request, as defined by

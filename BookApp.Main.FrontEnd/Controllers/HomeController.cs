@@ -2,12 +2,12 @@
 // Licensed under MIT license. See License.txt in the project root for license information.
 
 using System.Diagnostics;
+using BookApp.Books.Persistence;
+using BookApp.Main.FrontEnd.HelperExtensions;
+using BookApp.Main.FrontEnd.Models;
 using Microsoft.AspNetCore.Mvc;
-using ModMon.Books.Persistence;
-using ModMon.UI.HelperExtensions;
-using ModMon.UI.Models;
 
-namespace ModMon.UI.Controllers
+namespace BookApp.Main.FrontEnd.Controllers
 {
     public class HomeController : BaseTraceController
     {
