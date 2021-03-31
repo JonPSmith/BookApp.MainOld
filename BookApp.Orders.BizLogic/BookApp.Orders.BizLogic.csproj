@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GenericServices.StatusGeneric" Version="1.1.0" />
+    <PackageReference Include="System.Collections.Immutable" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BookApp.Orders.Domain\BookApp.Orders.Domain.csproj" />
+    <ProjectReference Include="..\BookApp.Orders.Persitence.DbAccess\BookApp.Orders.Persitence.DbAccess.csproj" />
+  </ItemGroup>
+
+</Project>
