@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ModMon.LoggingServices\ModMon.LoggingServices.csproj" />
+    <ProjectReference Include="..\BookAp.Main.LoggingServices\BookAp.Main.LoggingServices.csproj" />
   </ItemGroup>
 
 </Project>

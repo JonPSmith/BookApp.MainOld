@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModMon.UI", "ModMon.UI\ModMon.UI.csproj", "{F206DDA2-CBBE-4979-B1CB-1C105999DF8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModMon.LoggingServices", "ModMon.LoggingServices\ModMon.LoggingServices.csproj", "{1F76B9FD-9D8E-41A2-907E-AEE835D5F3C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookAp.Main.LoggingServices", "BookAp.Main.LoggingServices\BookAp.Main.LoggingServices.csproj", "{EEAC4A4A-2747-4A53-8B9C-5EE4934D709B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{F206DDA2-CBBE-4979-B1CB-1C105999DF8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F206DDA2-CBBE-4979-B1CB-1C105999DF8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F206DDA2-CBBE-4979-B1CB-1C105999DF8C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1F76B9FD-9D8E-41A2-907E-AEE835D5F3C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1F76B9FD-9D8E-41A2-907E-AEE835D5F3C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1F76B9FD-9D8E-41A2-907E-AEE835D5F3C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1F76B9FD-9D8E-41A2-907E-AEE835D5F3C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEAC4A4A-2747-4A53-8B9C-5EE4934D709B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEAC4A4A-2747-4A53-8B9C-5EE4934D709B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEAC4A4A-2747-4A53-8B9C-5EE4934D709B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEAC4A4A-2747-4A53-8B9C-5EE4934D709B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
